@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text Generator</title>
+    </head>
+    <body>
+        <h1>Text Generator</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label for="prompt">Enter a prompt:</label>
+            <input type="text" id="prompt" name="prompt">
+            <button type="submit">Generate</button>
+          </form>
+          
+    </body>
